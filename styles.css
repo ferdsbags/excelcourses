@@ -172,7 +172,8 @@ body {
   border-radius: 10px;
   border-left: 3px solid var(--green-accent);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
-  animation: fadeSlide 0.5s ease both;
+  opacity: 0;
+  animation: fadeSlide 0.6s ease forwards;
 }
 
 .artifact-step:hover {
@@ -180,11 +181,11 @@ body {
   box-shadow: 0 6px 20px rgba(29,106,74,0.09);
 }
 
-.artifact-step:nth-child(1) { animation-delay: 0.08s; }
-.artifact-step:nth-child(2) { animation-delay: 0.16s; }
-.artifact-step:nth-child(3) { animation-delay: 0.24s; }
-.artifact-step:nth-child(4) { animation-delay: 0.32s; }
-.artifact-step:nth-child(5) { animation-delay: 0.40s; }
+.artifact-step:nth-child(1) { animation-delay: 1.0s; }
+.artifact-step:nth-child(2) { animation-delay: 1.5s; }
+.artifact-step:nth-child(3) { animation-delay: 2.0s; }
+.artifact-step:nth-child(4) { animation-delay: 2.5s; }
+.artifact-step:nth-child(5) { animation-delay: 3.0s; }
 
 .step-num {
   flex-shrink: 0;
@@ -250,7 +251,6 @@ body {
   transition: transform 0.26s ease, box-shadow 0.26s ease, border-color 0.26s ease;
   cursor: pointer;
   animation: fadeSlide 0.5s ease both;
-  /* Reset anchor styles when card is an <a> tag */
   display: block;
   text-decoration: none;
   color: inherit;
@@ -433,30 +433,6 @@ footer strong { color: rgba(255,255,255,0.80); }
 @keyframes fadeSlide {
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-
-/* ---------- LEVEL LABELS ---------- */
-.level-label {
-  display: inline-block;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--green);
-  background: var(--green-light);
-  border: 1px solid #b2d9c8;
-  border-radius: 4px;
-  padding: 5px 0;
-  margin-bottom: 0.6rem;
-  width: 140px;
-  text-align: center;
-}
-
-/* ---------- ADVANCED SECTION SEPARATOR ---------- */
-.courses-section--advanced {
-  background: #f7f9f8;
-  border-top: 2px solid var(--border);
 }
 
 /* ---------- RESPONSIVE ---------- */
