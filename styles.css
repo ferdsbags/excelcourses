@@ -645,3 +645,49 @@ body { padding-top: 38px; }
   .hero           { padding: 24px 24px 20px; }
   .footer-links   { gap: 6px 12px; }
 }
+
+/* ---------- SKILL ASSESSMENT BAND ---------- */
+.assessment-band {
+  background: var(--gold-light);
+  border-top: 1px solid rgba(200,146,58,0.2);
+  border-bottom: 1px solid rgba(200,146,58,0.2);
+  padding: 18px 64px;
+}
+
+.assessment-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.assessment-inner p {
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin: 0;
+}
+
+.assessment-cta {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--gold);
+  padding: 8px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.18s ease;
+  white-space: nowrap;
+}
+
+.assessment-cta:hover {
+  background: #e0a44a;
+}
+
+@media (max-width: 600px) {
+  .assessment-band  { padding: 16px 24px; }
+  .assessment-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
